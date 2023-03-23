@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #fff7ed;
+  --black: #252525;
+  --gray: #4d4d4d;
+  --lyellow: #ffead0;
+  --lorange: #ff8c38;
+  --white: #ffffff;
+  --vlorange: #ffcc8d;
+}
