@@ -42,8 +42,10 @@ Screenshot of the Tenzies Game mock up
 1. Recreated the design as per [Figma](hhttps://www.figma.com/file/igDA2NiMDhoaIIAqm5EnTq/%23VanLife?t=rtzs9MOecAOmAe5p-0)
 
 2. Started with the mockup -- deleteting unrequired files and adding the `component` and `images` files to the structure after `npm create vite@latest tenzies -- --template react`
+   
+3. Created the `navbar` , `home`, `footer` and `about` components
 
-3. Writing out this `README.md` file
+4. Writing out this `README.md` file
 
 ### Built with
 
@@ -57,10 +59,15 @@ Screenshot of the Tenzies Game mock up
 
 - Using Figma files to code
 
-- ##### 
-
-```JSX
-
+- ##### Fixing the footer to the bottom
+  Had to separate the `Home` component footer and the other pages footer position to fix overflow issues
+  The footers position property in `styles.css` is relative whereas in `home.css` it's fixed as shown in the snippet below
+```css
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 ```
 
 - ##### 
