@@ -14,3 +14,116 @@
   --white: #ffffff;
   --vlorange: #ffcc8d;
 }
+
+body {
+  font-family: "Inter", sans-serif; /* 400, 500, 700, 800*/
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  font-weight: 700;
+}
+
+button,
+a {
+  transition: all 200ms ease-in-out;
+}
+
+nav {
+  background-color: var(--cream);
+}
+
+.nav,
+ul {
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav img {
+  max-width: 7rem;
+}
+
+.container {
+  width: min(100vw - 2rem, 550px);
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+
+/* Nav items styling */
+
+.nav ul {
+  gap: 1rem;
+}
+
+.nav ul li a {
+  color: var(--gray);
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.nav ul li a:hover {
+  color: var(--black);
+  /* selected style: - */
+  border-bottom: 3px var(--gray) solid;
+}
+
+/* Home Section */
+main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("../src/assets/images/mountain.png");
+  width: 100vw;
+  min-height: 85vh;
+  color: var(--white);
+  display: grid;
+  align-content: center;
+}
+
+.main--title {
+  font-weight: 800;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.main--text {
+  padding-block: 1.5rem;
+}
+
+.btn--long {
+  background-color: var(--lorange);
+  border-radius: 5px;
+  padding-block: 0.5rem;
+  width: 100%;
+}
+
+.btn--long:hover {
+  transform: scale(1.1);
+}
+
+/* Home Section */
+
+/* <>>>>>>>>>>>>>>>>>>>>>>>> FOOTER<><>>>>>>>>>>> */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  font-size: 0.875rem;
+  color: #aaaaaa;
+  text-align: center;
+  padding-block: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* <>>>>>>>>>>>>>>>>>>>>>>>> FOOTER<><>>>>>>>>>>> */
