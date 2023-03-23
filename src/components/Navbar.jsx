@@ -1,20 +1,21 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav>
       <div className="container nav">
-        <a href="#">
+        <Link to="/">
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
 
         <ul>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#">Vans</a>
+            <Link to="/vans">Vans</Link>
           </li>
         </ul>
       </div>
