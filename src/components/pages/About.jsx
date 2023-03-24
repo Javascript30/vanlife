@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-
+import { Link } from "react-router-dom";
 import camper from "../../assets/images/camper.png";
 
 function About() {
@@ -30,7 +30,9 @@ function About() {
 
         <div className="about--footer">
           <h2>Your destination is waiting. Your van is ready.</h2>
-          <button className="btn btn--black">Explore our vans</button>
+          <Link to={"/vans"} className="btn btn--black">
+            Explore our vans
+          </Link>
         </div>
       </section>
       <Footer />

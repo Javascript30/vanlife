@@ -13,6 +13,8 @@
   --lorange: #ff8c38;
   --white: #ffffff;
   --vlorange: #ffcc8d;
+  --lred: #e17654;
+  --green: #115e59;
 }
 
 body {
@@ -149,7 +151,8 @@ footer {
   max-height: 400px;
 }
 
-.about--title {
+.about--title,
+.vans--title {
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 2.5rem);
 }
@@ -170,6 +173,8 @@ footer {
 }
 
 .about--footer .btn {
+  display: block;
+  width: fit-content;
   margin-block-start: 1.5rem;
   margin-block-end: 0.5rem;
 }
@@ -181,3 +186,89 @@ footer {
 }
 
 /* <<<<<>>>>ABOUT SECTION <<<>>>>>>>>>> */
+
+/* <>>><<<<<<<><><>VANS<<>>>>>>>>>>>><>><><><>< */
+.van--container {
+  width: min(1000px, 100vw - 2rem);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.vans--title {
+  padding-block: 1.5rem;
+}
+
+.van--container button {
+  color: var(--gray);
+  font-size: 0.875rem;
+}
+
+.btn--options {
+  background-color: var(--lyellow);
+  padding-inline: 1rem;
+  margin-inline-end: 1.5rem;
+  margin-block-end: 1rem;
+}
+
+.van--container button[type="reset"] {
+  background-color: transparent;
+}
+.van--container button[type="reset"]:hover {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.vans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.van img {
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.van--content {
+  display: flex;
+  padding-block-start: 0.5rem;
+  justify-content: space-between;
+}
+
+.van--title,
+.van--price {
+  font-weight: 600;
+}
+
+.van--price span {
+  font-weight: 500;
+  font-size: 0.875rem;
+  display: block;
+  transform: translateY(-8px);
+}
+
+.van button {
+  text-align: left;
+}
+
+.btn--option {
+  color: var(--lyellow) !important;
+  font-size: 0.875rem !important;
+  text-transform: capitalize;
+  display: block;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+
+.btn--simple {
+  background-color: var(--lred);
+}
+.btn--luxury {
+  background-color: var(--black);
+}
+.btn--rugged {
+  background-color: var(--green);
+}
+/* <>>><<<<<<<><><>VANS<<>>>>>>>>>>>><>><><><>< */

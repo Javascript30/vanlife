@@ -28,7 +28,7 @@ function Vans() {
   return (
     <>
       <Navbar />
-      <section className="vans van--conatiner">
+      <section className="van--container">
         <h1 className="vans--title">Explore our van options</h1>
 
         {/* Filtering options */}
@@ -40,7 +40,7 @@ function Vans() {
         <button type="reset">Clear filters</button>
 
         {/* Van Section */}
-        {myVans}
+        <div className="vans">{myVans}</div>
       </section>
       <Footer />
     </>

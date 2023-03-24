@@ -28,9 +28,9 @@ Recreate the vanlife routes from the figma file shared
 
 ### Screenshot
 
-Screenshot of the Tenzies Game mock up
+Screenshot of the Vans page showing the vans
 
-![](./src/assets/images/screenshot.jpg)
+![](./src/assets/images/vansscreenshot.jpg)
 
 ### Links
 
@@ -46,8 +46,10 @@ Screenshot of the Tenzies Game mock up
 3. Created the `navbar` , `home`, `footer` and `about` components
    
 4. Added the use of `miragejs` as a fake server to render the `vans`
+   
+5. Added the `Van` component and styled it as per the figma design then  mapped through the data fetched from the server to render all the vans on the `Vans` compoment
 
-5. Writing out this `README.md` file
+6. Writing out this `README.md` file
 
 ### Built with
 
