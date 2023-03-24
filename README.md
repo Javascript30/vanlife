@@ -6,7 +6,7 @@ The course is offered for FREE on Scrimba by Bob Ziroll [Learn React Router Dom]
 
 ## Table of contents
 
-- [Tenzies Game Section 4 Project {React Course, Scrimba}](#tenzies-game-section-4-project-react-course-scrimba)
+- [VanLife Project React Router Dom {React Course, Scrimba}](#vanlife-project-react-router-dom-react-course-scrimba)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -44,8 +44,10 @@ Screenshot of the Tenzies Game mock up
 2. Started with the mockup -- deleteting unrequired files and adding the `component` and `images` files to the structure after `npm create vite@latest tenzies -- --template react`
    
 3. Created the `navbar` , `home`, `footer` and `about` components
+   
+4. Added the use of `miragejs` as a fake server to render the `vans`
 
-4. Writing out this `README.md` file
+5. Writing out this `README.md` file
 
 ### Built with
 
@@ -59,6 +61,30 @@ Screenshot of the Tenzies Game mock up
 
 - Using Figma files to code
 
+- ##### Using `miragejs` as a fake api server
+   
+  ```jsx
+   // Imported the `server.js` file in `App.jsx`
+   // Used `useEffect` and `useState` to fetch and display the vans on the `Vans` page
+  const [vans, setVans] = useState([]);
+  React.useEffect(() => {
+    fetch("/api/vans")
+      .then((res) => res.json())
+      .then((data) => setVans(data.vans));
+  }, []);
+  const myVans = vans.map((van) => {
+    return (
+      <Van
+        key={van.id}
+        name={van.name}
+        price={van.price}
+        image={van.imageUrl}
+        type={van.type}
+      />
+    );
+  });
+  ```
+  
 - ##### Fixing the footer to the bottom
   Had to separate the `Home` component footer and the other pages footer position to fix overflow issues
   The footers position property in `styles.css` is relative whereas in `home.css` it's fixed as shown in the snippet below
@@ -70,7 +96,6 @@ footer {
 }
 ```
 
-- ##### 
 
 
 - ##### React! React! React!

@@ -1,15 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../Footer";
-
+import Van from "../Van";
 import Navbar from "../Navbar";
 
 function Vans() {
+  const [vans, setVans] = useState([]);
+
   React.useEffect(() => {
     fetch("/api/vans")
       .then((res) => res.json())
-      .then((data) => console.log("Success", data));
+      .then((data) => setVans(data.vans));
   }, []);
 
+  console.log(vans);
+
+  const myVans = vans.map((van) => {
+    return (
+      <Van
+        key={van.id}
+        name={van.name}
+        price={van.price}
+        image={van.imageUrl}
+        type={van.type}
+      />
+    );
+  });
   return (
     <>
       <Navbar />
@@ -25,6 +40,7 @@ function Vans() {
         <button type="reset">Clear filters</button>
 
         {/* Van Section */}
+        {myVans}
       </section>
       <Footer />
     </>

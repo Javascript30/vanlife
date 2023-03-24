@@ -1,21 +1,20 @@
 import React from "react";
 
-function Van() {
+function Van({ name, price, type, image }) {
   return (
     <div className="van">
-      <img src="" alt="" className="van--img" />
+      <img src={image} alt="" className="van--img" />
 
       <div className="van--content">
-        <h2 className="van--title">Mode</h2>
+        <h2 className="van--title">{name}</h2>
         <p className="van--price">
-          {" "}
-          =$60
+          ${price}
           <br />
           <span>/day</span>
         </p>
       </div>
       <button disabled="disabled" className="btn--option btn--simple">
-        Simple
+        {type}
       </button>
     </div>
   );
