@@ -13,7 +13,16 @@ function Van({ name, price, type, image }) {
           <span>/day</span>
         </p>
       </div>
-      <button disabled="disabled" className="btn--option btn--simple">
+      <button
+        disabled="disabled"
+        className={`btn--option ${
+          type === "simple"
+            ? "btn--simple"
+            : type === "rugged"
+            ? "btn--rugged"
+            : "btn--luxury"
+        }  `}
+      >
         {type}
       </button>
     </div>
