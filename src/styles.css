@@ -68,13 +68,15 @@ ul {
   gap: 1rem;
 }
 
-.nav ul li a {
+.nav ul li a,
+.van--details a {
   color: var(--gray);
   font-family: inherit;
   font-weight: 600;
 }
 
-.nav ul li a:hover {
+.nav ul li a:hover,
+.van--details a:hover {
   color: var(--black);
   /* selected style: - */
   border-bottom: 3px var(--gray) solid;

@@ -18,6 +18,7 @@ function Vans() {
     return (
       <Van
         key={van.id}
+        id={van.id}
         name={van.name}
         price={van.price}
         image={van.imageUrl}
