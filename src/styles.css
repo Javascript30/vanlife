@@ -196,6 +196,10 @@ footer {
   text-align: center;
 }
 
+.van--container a {
+  color: initial;
+}
+
 .vans--title {
   padding-block: 1.5rem;
 }
@@ -250,27 +254,60 @@ footer {
   transform: translateY(-8px);
 }
 
-.van button {
-  text-align: left;
-}
-
-.btn--option {
-  color: var(--lyellow) !important;
-  font-size: 0.875rem !important;
-  text-transform: capitalize;
-  display: block;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
+.van i {
   transform: translateY(-1rem);
 }
 
-.btn--simple {
+i {
+  display: block;
+  width: fit-content;
+  color: var(--lyellow);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  text-align: left;
+  font-style: normal;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.simple {
   background-color: var(--lred);
 }
-.btn--luxury {
+.luxury {
   background-color: var(--black);
 }
-.btn--rugged {
+.rugged {
   background-color: var(--green);
 }
 /* <>>><<<<<<<><><>VANS<<>>>>>>>>>>>><>><><><>< */
+
+/* <<>>>>>>>>>>>Van Details Page <<<<<<<<<>>>>>>>>>>> */
+
+.van--details .van--detail_img {
+  padding-block: 1rem;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.van--details i {
+  margin-block: 0.5rem;
+}
+
+.van--detail_title {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.van--detail_price span {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-block: 0.5rem;
+}
+
+.van--detail_text {
+  color: var(--gray);
+  padding-block: 1rem;
+}
+
+/* <<>>>>>>>>>>>Van Details Page <<<<<<<<<>>>>>>>>>>> */

@@ -47,9 +47,13 @@ Screenshot of the Vans page showing the vans
    
 4. Added the use of `miragejs` as a fake server to render the `vans`
    
-5. Added the `Van` component and styled it as per the figma design then  mapped through the data fetched from the server to render all the vans on the `Vans` compoment
+5. Added the `Van` component and styled it as per the figma design then  mapped through the data fetched from the server to render all the vans on the `Vans` component
+   
+6. Created a `VanDetails` page to show the details of a specific van from its associated id
+   
+7. Fetched data from id using `useParams` from `react-router-dom` +  Styled the `VanDetails` page 
 
-6. Writing out this `README.md` file
+8. Writing out this `README.md` file
 
 ### Built with
 
@@ -86,7 +90,7 @@ Screenshot of the Vans page showing the vans
     );
   });
   ```
-  
+
 - ##### Fixing the footer to the bottom
   Had to separate the `Home` component footer and the other pages footer position to fix overflow issues
   The footers position property in `styles.css` is relative whereas in `home.css` it's fixed as shown in the snippet below
@@ -98,6 +102,20 @@ footer {
 }
 ```
 
+- ##### Routing dynamically
+  Routing to a `VanDetails` page when a `Van` is clicked through its associated id
+  ```jsx
+  // App.jsx
+  <Route path="/vans/:id" element={<VanDetails />} />
+  // App.jsx
+
+  //Van.jsx
+  <Link to={`/vans/${id}`}>
+      <div className="van">
+        <img src={image} alt="" className="van--img" />
+      </div>
+    </Link>
+  ``` 
 
 
 - ##### React! React! React!

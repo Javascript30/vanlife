@@ -12,8 +12,6 @@ function Vans() {
       .then((data) => setVans(data.vans));
   }, []);
 
-  console.log(vans);
-
   const myVans = vans.map((van) => {
     return (
       <Van
