@@ -32,9 +32,9 @@ function Vans() {
 
         {/* Filtering options */}
 
-        <button className="btn btn--options">Simple</button>
-        <button className="btn btn--options">Luxury</button>
-        <button className="btn btn--options">Rugged</button>
+        <button className="btn btn--options btn--simple">Simple</button>
+        <button className="btn btn--options btn--luxury">Luxury</button>
+        <button className="btn btn--options btn--rugged">Rugged</button>
         {/* reset filtering */}
         <button type="reset">Clear filters</button>
 

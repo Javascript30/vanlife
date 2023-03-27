@@ -15,17 +15,7 @@ function Van({ id, name, price, type, image }) {
             <span>/day</span>
           </p>
         </div>
-        <i
-          className={` ${
-            type === "simple"
-              ? "simple"
-              : type === "rugged"
-              ? "rugged"
-              : "luxury"
-          }  `}
-        >
-          {type}
-        </i>
+        <i className={type}>{type}</i>
       </div>
     </Link>
   );

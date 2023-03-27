@@ -1,18 +1,18 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
+import "../host.css";
 
-export default function Navbar() {
+function Host() {
   return (
-    <nav>
-      <div className="container nav">
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-        </Link>
+    <>
+      <Navbar />
 
-        <ul>
+      <div className="host">
+        <ul className="host--nav">
           <li>
-            <Link to="/host">Host</Link>
+            <Link to="/host">Dashboard</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -22,6 +22,10 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-    </nav>
+
+      <Footer />
+    </>
   );
 }
+
+export default Host;

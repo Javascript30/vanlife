@@ -47,7 +47,7 @@ nav {
 }
 
 .nav,
-ul {
+nav ul {
   justify-content: space-between;
   display: flex;
 }
@@ -68,14 +68,13 @@ ul {
   gap: 1rem;
 }
 
-.nav ul li a,
+ul li a,
 .van--details a {
   color: var(--gray);
   font-family: inherit;
   font-weight: 600;
 }
-
-.nav ul li a:hover,
+ul li a:hover,
 .van--details a:hover {
   color: var(--black);
   /* selected style: - */
@@ -270,13 +269,20 @@ i {
   padding: 0.5rem 1rem;
 }
 
-.simple {
+.btn--options:hover {
+  color: var(--white);
+}
+
+.simple,
+.btn--simple:hover {
   background-color: var(--lred);
 }
-.luxury {
+.luxury,
+.btn--luxury:hover {
   background-color: var(--black);
 }
-.rugged {
+.rugged,
+.btn--rugged:hover {
   background-color: var(--green);
 }
 /* <>>><<<<<<<><><>VANS<<>>>>>>>>>>>><>><><><>< */

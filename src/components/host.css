@@ -1,0 +1,13 @@
+.host {
+  background-color: var(--cream);
+}
+
+.host--nav {
+  display: flex;
+  gap: 2rem;
+  padding-block: 1.5rem;
+}
+
+.host--nav a {
+  font-size: 1.2rem;
+}

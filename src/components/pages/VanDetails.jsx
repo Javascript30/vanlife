@@ -14,7 +14,6 @@ function VanDetails() {
       .then((data) => setVanDetail(data.vans));
   }, []);
 
-  console.log(vanDetail);
   return (
     <>
       <Navbar />
@@ -24,18 +23,10 @@ function VanDetails() {
           <img src={arrow} alt="" /> Back to all vans
         </Link>
 
+        {/* {van ? (
+          <> */}
         <img className="van--detail_img" src={vanDetail.imageUrl} alt="van" />
-        <i
-          className={` ${
-            vanDetail.type === "simple"
-              ? "simple"
-              : vanDetail.type === "rugged"
-              ? "rugged"
-              : "luxury"
-          }  `}
-        >
-          {vanDetail.type}
-        </i>
+        <i className={vanDetail.type}>{vanDetail.type}</i>
 
         <h1 className="van--detail_title">{vanDetail.name}</h1>
 
@@ -47,6 +38,10 @@ function VanDetails() {
         <p className="van--detail_text">{vanDetail.description}</p>
 
         <button className="btn btn--long">Rent this van</button>
+        {/* </>
+        ) : (
+          <h2>Loading ....</h2>
+        )} */}
       </section>
       <Footer />
     </>
