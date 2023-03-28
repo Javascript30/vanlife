@@ -11,3 +11,77 @@
 .host--nav a {
   font-size: 1.2rem;
 }
+
+.income {
+  background-color: var(--lyellow);
+}
+
+.income--details,
+.review .container,
+.top--section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+.income h1 {
+  font-size: clamp(1.8rem, 4vw, 2rem);
+}
+
+.income--details p,
+.score span,
+.host--van span {
+  color: var(--gray);
+}
+
+.income--details span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.income--generated {
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+
+.review {
+  padding-block: 1.5rem;
+  background-color: #ffddb2;
+}
+
+.score span {
+  font-weight: 400;
+}
+
+.host h3 {
+  font-size: 1.4rem;
+}
+
+.host--van {
+  background-color: var(--white);
+  border-radius: 5px;
+  margin-block: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.host--van img {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.host--van a {
+  margin-left: auto;
+}
+
+.host--van h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.host--van span {
+  font-weight: 500;
+  font-size: 1rem;
+}

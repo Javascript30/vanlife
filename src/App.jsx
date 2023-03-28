@@ -5,6 +5,7 @@ import Vans from "./components/pages/Vans";
 import VanDetails from "./components/pages/VanDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./server";
+import Host from "./components/pages/Host";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetails />} />
+
+          <Route path="/host" element={<Host />} />
         </Routes>
       </BrowserRouter>
     </>

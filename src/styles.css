@@ -69,13 +69,15 @@ nav ul {
 }
 
 ul li a,
-.van--details a {
+.van--details a,
+.host a {
   color: var(--gray);
   font-family: inherit;
   font-weight: 600;
 }
 ul li a:hover,
-.van--details a:hover {
+.van--details a:hover,
+.host a:hover {
   color: var(--black);
   /* selected style: - */
   border-bottom: 3px var(--gray) solid;
