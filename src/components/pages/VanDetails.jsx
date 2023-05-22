@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import arrow from "../../assets/images/arrow.png";
 function VanDetails() {
   const params = useParams();
@@ -16,7 +14,6 @@ function VanDetails() {
 
   return (
     <>
-      <Navbar />
       <section className="van--details container">
         <Link to={"/vans"}>
           {" "}
@@ -43,7 +40,6 @@ function VanDetails() {
           <h2>Loading ....</h2>
         )} */}
       </section>
-      <Footer />
     </>
   );
 }

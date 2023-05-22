@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import "../host.css";
 
@@ -11,8 +9,6 @@ import greenwonder from "../../assets/images/greenwonder.png";
 function Host() {
   return (
     <>
-      <Navbar />
-
       <div className="host">
         <ul className="host--nav  container">
           <li>
@@ -84,8 +80,6 @@ function Host() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

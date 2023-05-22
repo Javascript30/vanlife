@@ -1,11 +1,8 @@
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import "../home.css";
 
 function Home() {
   return (
     <>
-      <Navbar />
       <main>
         <div className="container main--content">
           <h1 className="main--title">
@@ -18,7 +15,6 @@ function Home() {
           <button className="btn btn--long">Find your van</button>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

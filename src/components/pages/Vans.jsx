@@ -26,7 +26,6 @@ function Vans() {
   });
   return (
     <>
-      <Navbar />
       <section className="van--container">
         <h1 className="vans--title">Explore our van options</h1>
 
@@ -41,7 +40,6 @@ function Vans() {
         {/* Van Section */}
         <div className="vans">{myVans}</div>
       </section>
-      <Footer />
     </>
   );
 }

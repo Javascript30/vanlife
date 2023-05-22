@@ -1,14 +1,10 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import camper from "../../assets/images/camper.png";
 
 function About() {
   return (
     <>
-      <Navbar />
-
       <div className="about--img">
         <img src={camper} alt="camper" />
       </div>
@@ -35,7 +31,6 @@ function About() {
           </Link>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
