@@ -10,21 +10,6 @@ function Host() {
   return (
     <>
       <div className="host">
-        <ul className="host--nav  container">
-          <li>
-            <Link to="/host">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/host/income">Income</Link>
-          </li>
-          <li>
-            <Link to="/host/vans">Vans</Link>
-          </li>
-          <li>
-            <Link to="/host/review">Reviews</Link>
-          </li>
-        </ul>
-
         <section className="income">
           <div className="container">
             <h1>Welcome!</h1>

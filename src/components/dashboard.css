@@ -1,11 +1,12 @@
-.host {
+.host,
+.nav {
   background-color: var(--cream);
 }
 
 .host--nav {
   display: flex;
-  gap: 2rem;
-  padding-block: 1.5rem;
+  gap: 3rem;
+  padding-block: 2rem;
 }
 
 .host--nav a {
@@ -31,11 +32,14 @@
 
 .income--details p,
 .score span,
-.host--van span {
+.host--van span,
+.transaction--details .date,
+.transactions .top--section p {
   color: var(--gray);
 }
 
-.income--details span {
+.income--details span,
+.transactions .top--section span {
   font-weight: 600;
   text-decoration: underline;
 }
@@ -57,7 +61,8 @@
   font-size: 1.4rem;
 }
 
-.host--van {
+.host--van,
+.transaction--details {
   background-color: var(--white);
   border-radius: 5px;
   margin-block: 1rem;
@@ -84,4 +89,24 @@
 .host--van span {
   font-weight: 500;
   font-size: 1rem;
+}
+
+/* Income CSS*/
+
+.graph--img {
+  text-align: center;
+}
+
+.graph--img img {
+  width: 100%;
+}
+
+.transaction--details {
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.transaction--details .cost {
+  font-weight: 600;
+  font-size: 1.5rem;
 }

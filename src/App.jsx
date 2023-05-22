@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./components/pages/Host/Dashboard";
 import Income from "./components/pages/Host/Income";
 import Reviews from "./components/pages/Host/Reviews";
+import HostLayout from "./components/pages/Host/HostLayout";
 
 function App() {
   return (
@@ -23,9 +24,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/vans" element={<Vans />} />
             <Route path="/vans/:id" element={<VanDetails />} />
-            <Route path="/host" element={<Dashboard />} />
-            <Route path="/host/income" element={<Income />} />
-            <Route path="/host/review" element={<Reviews />} />
+
+            <Route element={<HostLayout />}>
+              <Route path="/host" element={<Dashboard />} />
+              <Route path="/host/income" element={<Income />} />
+              <Route path="/host/review" element={<Reviews />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
