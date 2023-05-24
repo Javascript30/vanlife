@@ -1,8 +1,13 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
+  const activeStyle = {
+    color: "var(--black)",
+    borderBottom: "3px var(--gray) solid",
+  };
+
   return (
     <nav>
       <div className="container nav">
@@ -12,13 +17,28 @@ export default function Navbar() {
 
         <ul>
           <li>
-            <Link to="/host">Host</Link>
+            <NavLink
+              to="/host"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+            >
+              Host
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/vans">Vans</Link>
+            <NavLink
+              to="/vans"
+              style={({ isActive }) => (isActive ? activeStyle : null)}
+            >
+              Vans
+            </NavLink>
           </li>
         </ul>
       </div>
