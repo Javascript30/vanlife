@@ -34,12 +34,15 @@
 .score span,
 .host--van span,
 .transaction--details .date,
-.transactions .top--section p {
+.transactions .top--section p,
+.review-top p,
+.rate-date {
   color: var(--gray);
 }
 
 .income--details span,
-.transactions .top--section span {
+.transactions .top--section span,
+.review-top span {
   font-weight: 600;
   text-decoration: underline;
 }
@@ -93,11 +96,13 @@
 
 /* Income CSS*/
 
-.graph--img {
+.graph--img,
+.rating--img {
   text-align: center;
 }
 
-.graph--img img {
+.graph--img img,
+.rating--img img {
   width: 100%;
 }
 
@@ -110,3 +115,40 @@
   font-weight: 600;
   font-size: 1.5rem;
 }
+
+/* Income CSS*/
+
+/* Reviews CSS */
+
+.review-top,
+.rating--top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review-top {
+  margin-block-end: 1.5rem;
+}
+
+.rating--img {
+  margin-block: 1rem;
+}
+
+.rating--details {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.stars {
+  padding-block-end: 0.5rem;
+}
+
+.rate-text {
+  padding-block: 1rem;
+}
+
+.rating--details {
+  margin-block-end: 1rem;
+}
+
+/* Reviews CSS */
